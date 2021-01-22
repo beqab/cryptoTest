@@ -1,6 +1,6 @@
 {
-  "name": "cryptoiex.io",
   "homepage": "./",
+  "name": "cryptoiex.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -65,7 +65,9 @@
     "typescript": "^3.9.7"
   },
   "scripts": {
-    "start": "react-scripts start -p $PORT",
+    "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -101,5 +103,7 @@
       "git add"
     ]
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
 }
