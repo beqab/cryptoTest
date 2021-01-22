@@ -1,0 +1,20 @@
+// flex
+%flex {
+    display: flex;
+}
+
+%flexAlignCenter {
+    align-items: center;
+    display: flex;
+}
+
+%flexJustifyCenter {
+    display: flex;
+    justify-content: center;
+}
+
+%flexCenter {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

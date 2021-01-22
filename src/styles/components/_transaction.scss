@@ -1,0 +1,109 @@
+.transactions {
+    color: #fff;
+
+    &_row {
+        align-items: center;
+        background: #0A60B7;
+        border-radius: 5px;
+        display: flex;
+        height: 55px;
+        margin-bottom: 1px;
+        padding-left: 10px;
+        padding-right: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &_icon {
+        align-items: center;
+        background: #0D3B8F;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        height: 45px;
+        width: 45px;
+
+        img {
+            width: 25px;
+        }
+    }
+
+    &_money {
+        align-items: center;
+        display: flex;
+        height: 40px;
+        margin-left: 30px;
+
+        &_img {
+            margin-right: 12px;
+        }
+
+        &_amount {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+
+        & + .transactions_money {
+            padding-left: 30px;
+            border-left: 1px solid rgba(255, 255, 255, .2);
+        }
+    }
+
+    &_date {
+        align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        margin-left: auto;
+
+        span:last-child {
+            margin-top: 3px;
+            margin-right: 6px;
+        }
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .transactions {
+        &_row {
+            height: 40px;
+            padding: 0 5px;
+        }
+
+        &_icon {
+            height: 30px;
+            width: 30px;
+            img {
+                width: 16px;
+            }
+        }
+        &_money {
+            height: 30px;
+            margin-left: 10px;
+
+            &_img {
+                width: 14px;
+                margin-right: 5px;
+            }
+
+            &_amount {
+                font-size: 16px;
+            }
+
+
+            & + .transactions_money {
+                padding-left: 10px;
+            }
+        }
+        &_date {
+            font-size: 12px;
+            span:last-child {
+                margin-top: 3px;
+                margin-right: 0;
+            }
+        }
+    }
+}

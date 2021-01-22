@@ -1,0 +1,57 @@
+$font-family: Montserrat, sans-serif;
+$font-size: 10px;
+
+$breakpoint-mobile: 800px;
+
+// fonts
+
+$Myriad_Pro: "Myriad_Pro";
+
+// colors
+
+$color-text-primary-light: #393834;
+$color-text-primary-light2: #8c8f94;
+$color-text-secondary-light: #BDBDBD;
+
+$color-white: #FFFFFF;
+$color-bg-light-1: #F8F8F8;
+$color-bg-light-2: #F5F5F5;
+$color-bg-light-3: #F2F2F2;
+$color-warning: #FDD603;
+$color-black: #000000;
+$color-black-2: #26272d;
+$color-light-blue: #267df4;
+
+// App
+$color-bg-app-light: $color-bg-light-2;
+$color-shadow: transparentize($color-black, 1 - .07);
+$color-title: $color-text-primary-light;
+// header
+$color-text-header-lang-light: $color-text-secondary-light;
+$color-text-header-lang-active-light: $color-text-primary-light;
+$color-dot-header-lang: $color-warning;
+// Button
+$color-text-btn-primary-light: $color-text-primary-light;
+$color-bg-btn-primary-light: $color-warning;
+$color-text-btn-secondary-light: #292B2D;
+$color-bg-btn-secondary-light: #F8F8F8;
+$color-border-btn-secondary-light: $color-bg-light-3;
+// Slider
+$color-bg-slider-light: $color-bg-light-1;
+// Footer
+$color-bg-footer-light: $color-white;
+$color-bg-footer-bar-light: $color-bg-light-1;
+$color-bg-footer-lang-item-light: $color-bg-light-2;
+$color-text-footer-lang-item-light: $color-text-secondary-light;
+$color-bg-footer-lang-item-active-light: $color-text-secondary-light;
+$color-text-footer-lang-item-active-light: $color-text-primary-light;
+$color-text-footer-bar-light: $color-text-secondary-light;
+// Calculator
+$color-bg-infobox-light: $color-bg-light-1;
+$color-text-infobox-title-light: $color-text-secondary-light;
+
+
+$height-header: 8rem;
+
+$width-container: 122rem;
+$width-modal-generic: 60rem;

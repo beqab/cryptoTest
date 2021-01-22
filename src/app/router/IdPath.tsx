@@ -1,0 +1,28 @@
+export enum IdPath {
+    Home = "/",
+    About = "/about",
+    Terms = "/terms",
+    Privacy = "/privacy",
+    Refund = "/refund",
+    IexOu = "/iex-ou",
+    Faq = "/faq",
+    Contact = "/contact",
+    Forget = "/forget",
+    Activate = "/activate",
+    Fees = "/fees",
+    Limits = "/Limits",
+
+    Support = "/support",
+
+    Dashboard = "/dashboard",
+    Verification = "/verification",
+    VerificationOnfido = "/onfido",
+    Profile = "/profile",
+    Deposit = "/wallet",
+    transferDetails = "/transferDetails",
+    Transactions = "/transactions",
+    Logout = "/logout",
+    Balance = "/balance",
+    CreateCard = "/create-card",
+    Withdraw = "/withdraw",
+}

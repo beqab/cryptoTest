@@ -1,0 +1,26 @@
+@import "../../../styles/Variables";
+@import "../../../styles/Extendables";
+@import "../../../styles/Mixins";
+
+.LabelWithIcon {
+    @extend %flexCenter;
+    // theme-independent
+    background: linear-gradient(to bottom, #fda103 0%, $color-warning 100%);
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+
+    &__image {
+
+    }
+
+    &--medium {
+        min-height: 3rem;
+        min-width: 3rem;
+    }
+
+    &--large {
+        min-height: 5rem;
+        min-width: 5rem;
+    }
+}

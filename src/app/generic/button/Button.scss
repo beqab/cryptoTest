@@ -1,0 +1,58 @@
+@import "../../../styles/Variables";
+@import "../../../styles/Extendables";
+@import "../../../styles/Mixins";
+
+.Button {
+    @extend %flexCenter;
+    border: 0;
+    border-radius: .4rem;
+    cursor: pointer;
+    outline: 0;
+    padding: 0;
+
+    &[disabled] {
+        cursor: default;
+    }
+
+    &__icon {
+        margin-right: .5rem;
+    }
+}
+
+@include ThemeLight {
+    .Button {
+        &--primary {
+            background-color: $color-bg-btn-primary-light;
+            color: $color-text-btn-primary-light;
+        }
+
+        &--secondary {
+            border: .1rem solid $color-border-btn-secondary-light;
+            background-color: $color-bg-btn-secondary-light;
+            color: $color-text-btn-secondary-light;
+        }
+    }
+}
+
+
+// custom classes on button
+.Button {
+    &--sign-in {
+        height: 4rem;
+        padding: 0 2rem;
+    }
+    &--calculator {
+        font-weight: 700;
+        height: 7rem;
+        width: 39.5rem;
+    }
+}
+
+@include Mobile {
+    .Button {
+        &--calculator {
+            height: 5.5rem;
+            width: 100%;
+        }
+    }
+}

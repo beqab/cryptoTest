@@ -1,0 +1,24 @@
+@import "../../../styles/Variables";
+@import "../../../styles/Extendables";
+@import "../../../styles/Mixins";
+
+.Label {
+    @extend %flexCenter;
+    border-radius: 3rem;
+    height: 4rem;
+    width: 13.8rem;
+}
+
+@include ThemeLight {
+    .Label {
+        &--success {
+            background-color: #09E99D;
+        }
+        &--warning {
+            background-color: $color-warning;
+        }
+        &--danger {
+            background-color: #E92F09;
+        }
+    }
+}

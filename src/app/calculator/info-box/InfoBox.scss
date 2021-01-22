@@ -1,0 +1,50 @@
+@import "../../../styles/Variables";
+@import "../../../styles/Extendables";
+@import "../../../styles/Mixins";
+
+.InfoBoxes {
+    margin: 3rem -1rem;
+}
+
+.InfoBox {
+    font-family: 'Poppins', sans-serif;
+    @extend %flexCenter;
+    border-radius: .7rem;
+    flex-direction: column;
+    height: 12.2rem;
+    margin: 0 1rem;
+    background-color: #F7F5FA;
+
+    &__title {
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin: 0 0 1rem;
+    }
+
+    &__value {
+        @extend %flexAlignCenter;
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    &__icon {
+        margin-right: 1rem;
+    }
+}
+
+@include Mobile {
+    .InfoBoxes {
+        margin-bottom: 0;
+    }
+}
+
+@include ThemeLight {
+    .InfoBox {
+        background-color: $color-bg-infobox-light;
+
+        &__title {
+            color: $color-text-infobox-title-light;
+        }
+    }
+}
