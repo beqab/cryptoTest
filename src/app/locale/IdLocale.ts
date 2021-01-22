@@ -1,0 +1,1 @@
+export type IdLocale = string;

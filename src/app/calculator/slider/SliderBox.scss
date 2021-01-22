@@ -1,0 +1,51 @@
+@import "../../../styles/Variables";
+@import "../../../styles/Extendables";
+@import "../../../styles/Mixins";
+
+.SliderBox {
+    &__heading {
+        @extend %flexAlignCenter;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+
+    &__title {
+        font-size: 1.3rem;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    &__label {
+        @extend %flexCenter;
+        border-radius: 2.5rem;
+        font-size: 1.6rem;
+        font-weight: 700;
+        height: 5rem;
+        width: 14.9rem;
+    }
+
+    & + & {
+        margin-top: 2rem;
+    }
+}
+
+@include Mobile {
+    .SliderBox {
+        &__label {
+            border-radius: .7rem;
+        }
+    }
+}
+
+@include ThemeLight {
+    .SliderBox {
+        &__label {
+            background-color: $color-bg-light-3;
+            color: $color-text-secondary-light;
+
+            b {
+                color: $color-text-primary-light;
+            }
+        }
+    }
+}

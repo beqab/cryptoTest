@@ -1,0 +1,36 @@
+.TextCopier {
+   background-color: #082f76;
+    border-radius: .4rem;
+    display: flex;
+    height: 3.5rem;
+    margin-top: -8%;
+    position: relative;
+
+    &__input {
+       background-color: transparent;
+    border: 0;
+    color: #fff;
+    /* box-shadow: inset 0px 1px 11px 9px #0c1c38; */
+    height: 4.5rem;
+    outline: 0;
+    font-size: 68%;
+    padding-left: 1.5rem;
+    /* padding-right: 4.5rem; */
+    width: 130%;
+    border-radius: 5px;
+    }
+
+    &__button {
+        align-items: center;
+        border-radius: .4rem;
+        bottom: .5rem;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        right: .5rem;
+        top: .5rem;
+        width: 3.5rem;
+    }
+}
+

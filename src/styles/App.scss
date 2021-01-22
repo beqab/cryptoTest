@@ -1,0 +1,27 @@
+/*
+ * cryptoiex.io
+ */
+ 
+@import "./Variables";
+@import "./Fonts";
+
+// bundles from old css
+@import "./bundle/all";
+@import "./bundle/overrides";
+
+// vendor styles
+@import "~react-dropdown/style.css";
+
+// components
+@import "./generic/generic";
+@import "./components/app";
+@import "./components/burger";
+@import "./components/dropdown";
+@import "./components/page-title";
+@import "./components/profile-box";
+@import "./components/transaction";
+@import "./components/terms";
+
+@import "./pages/home";
+
+

@@ -1,0 +1,52 @@
+@import "../../../styles/Variables";
+@import "../../../styles/Extendables";
+@import "../../../styles/Mixins";
+
+.Slider {
+    @extend %flexAlignCenter;
+    border-radius: 3.2rem;
+    height: 6.3rem;
+
+    &__limit {
+        font-weight: 700;
+        white-space: nowrap;
+        padding: 0 2rem;
+    }
+
+    &__track {
+        @extend %flex;
+        flex: 1;
+        flex-direction: column;
+
+        &:after {
+            background: repeat-x top left;
+            content: "";
+            display: block;
+            height: 1.5rem;
+            margin: .2rem 2rem 0 2rem;
+        }
+    }
+}
+
+@include Mobile {
+    .Slider {
+        border-radius: .7rem;
+        padding: 0 1.5rem;
+
+        &__limit {
+            display: none;
+        }
+    }
+}
+
+@include ThemeLight {
+    .Slider {
+        background-color: $color-bg-slider-light;
+
+        &__track {
+            &:after {
+                background-image: url("../../../assets/images/scale.png");
+            }
+        }
+    }
+}

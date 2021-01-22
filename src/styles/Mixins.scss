@@ -1,0 +1,19 @@
+@import "Variables";
+
+@mixin ThemeLight {
+    .Theme--light {
+        @content;
+    }
+}
+
+@mixin ThemeDark {
+    .Theme--dark {
+        @content;
+    }
+}
+
+@mixin Mobile {
+    @media screen and (max-width: 400) {
+        @content
+    }
+}
