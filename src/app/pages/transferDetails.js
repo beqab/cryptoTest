@@ -8,17 +8,17 @@ const ref = React.createRef();
 
 const TransferDetails = () => {
   const [sepaRes, setSepaRes] = React.useState({});
-  const [loading, setLoading] = React.useState(false);
+  // const [loading, setLoading] = React.useState(false);
 
   const makeDepositSepa = () => {
-    setLoading(true);
+    // setLoading(true);
     api.beforeDeposit().subscribe((response) => {
       if (response.action === "success") {
         setSepaRes(response);
       } else {
         toast.error(response.error_description || response.message);
       }
-      setLoading(false);
+      // setLoading(false);
     });
   };
 
@@ -32,7 +32,7 @@ const TransferDetails = () => {
       <div className="container">
         <div style={{ paddingLeft: " 20px " }} className="header2">
           <a href="/">
-            <img src={Logo} />
+            <img alt="" src={Logo} />
           </a>
         </div>
         <div
@@ -88,7 +88,7 @@ const TransferDetails = () => {
         </div>
 
         <div style={{ color: "#006eda" }} className="supportBox">
-          <img src="https://i.imgur.com/eC0FYuc.png" />
+          <img alt="" src="https://i.imgur.com/eC0FYuc.png" />
           <br />
           24/7 support <br />
           hello@cryptoiex.io
